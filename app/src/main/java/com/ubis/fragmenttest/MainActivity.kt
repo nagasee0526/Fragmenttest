@@ -20,6 +20,8 @@ class MainActivity : baseActivity() {
     override fun setValues() {
         myAdapter = myViewAdapter(supportFragmentManager)
         myViewPager.adapter = myAdapter
+
+        myTabLayout.setupWithViewPager(myViewPager)
     }
 
     override fun setupEnents() {
