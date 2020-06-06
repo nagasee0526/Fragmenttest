@@ -11,7 +11,7 @@ import com.ubis.fragmenttest.adapters.studentadapter
 import com.ubis.fragmenttest.datas.students
 import kotlinx.android.synthetic.main.secondfragment.*
 
-class secondFragment : Fragment(){
+class secondFragment : basefragment(){
 
     val studentList = ArrayList<students>()
     // Oncreate가 실행된이후에 내용을 채워야함
@@ -29,6 +29,14 @@ class secondFragment : Fragment(){
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+        setupEvents()
+        setupValues()
+    }
+
+    override fun setupEvents() {
+    }
+
+    override fun setupValues() {
         studentList.add(students(name = "조경진", birthyear = 1988, gneder = true))
         studentList.add(students(name = "김광철", birthyear = 1966, gneder = true))
         studentList.add(students(name = "김재환", birthyear = 1993, gneder = true))
