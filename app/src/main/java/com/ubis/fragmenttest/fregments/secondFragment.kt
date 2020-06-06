@@ -30,13 +30,13 @@ class secondFragment : basefragment(){
         super.onActivityCreated(savedInstanceState)
 
         setupEvents()
-        setupValues()
+        setValues()
     }
 
     override fun setupEvents() {
     }
 
-    override fun setupValues() {
+    override fun setValues() {
         studentList.add(students(name = "조경진", birthyear = 1988, gneder = true))
         studentList.add(students(name = "김광철", birthyear = 1966, gneder = true))
         studentList.add(students(name = "김재환", birthyear = 1993, gneder = true))
@@ -45,7 +45,7 @@ class secondFragment : basefragment(){
         studentList.add(students(name = "엄곤지", birthyear = 1984, gneder = false))
         studentList.add(students(name = "이현호", birthyear = 1981, gneder = true))
 
-        nStudentAdapter = studentadapter(activity as Context, R.layout.activity_student_list_item, studentList)
+        nStudentAdapter = studentadapter(mContext, R.layout.activity_student_list_item, studentList)
         studentLitView.adapter = nStudentAdapter
     }
 

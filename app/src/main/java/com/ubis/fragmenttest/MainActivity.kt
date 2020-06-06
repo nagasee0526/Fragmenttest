@@ -13,11 +13,11 @@ class MainActivity : baseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setupValues()
+        setValues()
         setupEnents()
     }
 
-    override fun setupValues() {
+    override fun setValues() {
         myAdapter = myViewAdapter(supportFragmentManager)
         myViewPager.adapter = myAdapter
     }

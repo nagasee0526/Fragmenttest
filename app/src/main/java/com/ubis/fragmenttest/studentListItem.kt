@@ -10,10 +10,10 @@ class studentListItem : baseActivity() {
         setContentView(R.layout.activity_student_list_item)
 
         setupEnents()
-        setupValues()
+        setValues()
     }
 
-    override fun setupValues() {
+    override fun setValues() {
     }
 
     override fun setupEnents() {

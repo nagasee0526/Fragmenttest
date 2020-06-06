@@ -23,7 +23,7 @@ class firstFragment : basefragment(){
         super.onActivityCreated(savedInstanceState)
 
         setupEvents()
-        setupValues()
+        setValues()
     }
 
     override fun setupEvents() {
@@ -36,6 +36,6 @@ class firstFragment : basefragment(){
         }
     }
 
-    override fun setupValues() {
+    override fun setValues() {
     }
 }
